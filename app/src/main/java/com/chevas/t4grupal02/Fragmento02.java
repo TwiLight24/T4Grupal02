@@ -76,9 +76,9 @@ public class Fragmento02 extends Fragment {
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int Numero1 = Integer.parseInt(txtNumero1.getText().toString());
-                int Numero2 = Integer.parseInt(txtNumero2.getText().toString());
-                int monto = (Numero1 * Numero2);
+                double Numero1 = Integer.parseInt(txtNumero1.getText().toString());
+                double Numero2 = Integer.parseInt(txtNumero2.getText().toString());
+                double monto = (Numero1 * Numero2);
                 Toast.makeText(getContext(), "El resultado es: "+monto, Toast.LENGTH_SHORT).show();
                 txtResultado.setText("El resultado es: "+monto);
             }
