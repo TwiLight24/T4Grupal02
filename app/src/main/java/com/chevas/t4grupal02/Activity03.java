@@ -30,11 +30,11 @@ public class Activity03 extends AppCompatActivity {
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double Numero1 = Integer.parseInt(txtNumero1.getText().toString());
-                double Numero2 = Integer.parseInt(txtNumero2.getText().toString());
-                double monto = (Numero1 / Numero2);
-                Toast.makeText(Activity03.this, "El resultado es: "+monto, Toast.LENGTH_SHORT).show();
-                txtResultado.setText("El resultado es: "+monto);
+                double Numero1 = Double.parseDouble(txtNumero1.getText().toString());
+                double Numero2 = Double.parseDouble(txtNumero2.getText().toString());
+                double monto = Math.round((Numero1 / Numero2)*100.0)/100.0;
+                Toast.makeText(Activity03.this, "El resultado de la división es: "+monto, Toast.LENGTH_SHORT).show();
+                txtResultado.setText("El resultado de la división es: "+monto);
             }
         });
     }
