@@ -110,6 +110,6 @@
         android:layout_marginTop="300dp"
         android:layout_marginLeft="10dp"
         android:textSize="20dp"
-        android:text="El resultado es:" />
+        android:text="El resultado de la multiplicación es:" />
 
 </FrameLayout>

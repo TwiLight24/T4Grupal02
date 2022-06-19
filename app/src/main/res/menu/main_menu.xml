@@ -9,6 +9,6 @@
         android:icon="@drawable/icono02"/>
 
     <item android:id="@+id/menu3"
-        android:title="Opcion 03"
-        android:icon="@drawable/icono03"/>
+        android:title="Dividir"
+        android:icon="@drawable/ic_icono03"/>
 </menu>
